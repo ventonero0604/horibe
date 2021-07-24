@@ -4,13 +4,16 @@
 @import './_variables.scss';
 
 body {
-  font-family: -apple-system-subset, Helvetica, Hiragino Kaku Gothic ProN, sans-serif;
-  color: $gray-1;
+  font-family: 'ヒラギノ明朝 ProN W6', 'HiraMinProN-W6', 'HG明朝E', 'ＭＳ Ｐ明朝', 'MS PMincho',
+    'MS 明朝', serif;
+  color: $white;
+  background-color: $body;
   position: relative;
 }
 
 a {
-  color: $primary;
+  color: $white;
+  font-family: garamond-premier-pro-display, serif;
 }
 
 a,
@@ -20,6 +23,7 @@ button {
 
 .page {
   overflow: hidden;
+  font-family: 'Hiragino Mincho ProN', 'Yu Mincho', 'MS PMincho', serif;
 }
 
 .indent {

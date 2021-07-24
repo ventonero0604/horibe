@@ -1,18 +1,43 @@
 extends ./base/_skeleton
 
 //- Includes
-//- include ./components/_ui-header
+include ./sections/_header
+include ./component/_sectionTitle
 
 block variables
   - var activeCategory = 'home'
-  - var pageName = 'Home'
   - var config = globalConf;
 
 block page
   // Header
-  include ./sections/_header
+  +header(activeCategory)
 
-  p #{config.title}
+  // Main
+  section.Main#main
+    img(src="./img/main.png")
+  
+  // Concept
+  section.Concept#concept
+    img(src="./img/logo_concept.svg").Concept_logo
+    h2.Concept_lead 完全予約制／個室型ヘアサロン
+    p.Concept_text 高いホスピタリティを兼ね備えたオートクチュールな個室型ヘアサロン『HORIBE』
+    p.Concept_text 『ちょっとしたアートと癒しの空間で、まるで自分の部屋で髪を切っているよう…』
+    p.Concept_text そんな大人プライベートをコンセプトに、サスティナブルやオーガニックなどにもこだわって、<br>健康や環境にも配慮した安心安全な薬剤を使用し、歴25年以上の女性美容師が最初から最後まで丁寧に施術致します。<br>ご予約はお電話又はLINE公式アカウントにて承っております。
+    img(src="./img/concept_tel.svg").Concept_tel
+    p.Concept_text 東京都渋谷区神宮前3-16-16 アルチザン表参道105号
+
+  // Menu
+  include ./sections/_menu
+
+  // Gallery
+  include ./sections/_gallery
+
+  // Profile
+  include ./sections/_profile
+
+  // Contact
+  include ./sections/_contact
 
   // Footer
   include ./sections/_footer
+  

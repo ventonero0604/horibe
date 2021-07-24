@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  color: $gray-1;
+  color: $body;
   font-size: 1.6rem;
 }
 
@@ -55,22 +55,22 @@ button {
 /* placeholder */
 /* Webkit */
 ::-webkit-input-placeholder {
-  color: $gray-1;
+  color: $body;
   opacity: 1;
 }
 
 /* Firefox 18 以前 */
 :-moz-placeholder {
-  color: $gray-1;
+  color: $body;
 }
 
 /* Firefox 19 以降 */
 ::-moz-placeholder {
-  color: $gray-1;
+  color: $body;
   opacity: 1;
 }
 
 /* IE 10 以降 */
 :-ms-input-placeholder {
-  color: $gray-1;
+  color: $body;
 }

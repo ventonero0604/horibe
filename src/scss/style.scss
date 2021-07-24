@@ -5,8 +5,16 @@
 @import './foundation/_breakPoint.scss';
 @import './foundation/_page.scss';
 
+/* component */
+@import './component/sectionTitle.scss';
+@import './component/wrapper.scss';
+
 /* ui */
+@import './ui/header.scss';
 @import './ui/footer.scss';
+
+/* page */
+@import './page/top.scss';
 
 /* tailwind */
 @import 'tailwindcss/base';

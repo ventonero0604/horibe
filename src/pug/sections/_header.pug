@@ -1,7 +1,38 @@
+mixin header(currentPageName)
+  -
+    var list = [
+      {
+        url:"#top",
+        name:"TOP"
+      },
+      {
+        url:"#concept",
+        name:"CONCEPT"
+      },
+      {
+        url:"#menu",
+        name:"MENU"
+      },
+      {
+        url:"#gallery",
+        name:"GALLERY"
+      },
+      {
+        url:"#contact",
+        name:"CONTACT"
+      },
+    ];
 
-//- include ../base/_config
-//- - var page = htmlClass
-
-header 
-  include ../component/_logo 
-  img(src="./img/sample.png" alt=htmlClass)
+  header.Header(data-scroll-header="data-scroll-header")
+    include ../component/_logo 
+    nav.Header_menuWrapper
+      ul.Header_menu
+        li.Header_menu_spLogo 
+          img(src="./img/logo_header_sp.svg" alt="HORIBE")
+        each item in list
+          li 
+            a(href=`${item.url}` class=(item.name === currentPageName ? "is-current" : undefined)) #{item.name}
+    .Header_menuButton 
+      span 
+      span 
+      span 
