@@ -91,4 +91,8 @@ button {
   .sp_flex {
     display: flex;
   }
+  html.is-show {
+    height: 100%;
+    overflow: hidden;
+  }
 }

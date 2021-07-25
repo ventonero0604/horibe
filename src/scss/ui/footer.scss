@@ -3,3 +3,9 @@
   font-size: 1.2rem;
   text-align: center;
 }
+
+@include breakPoint(md) {
+  .Footer {
+    margin: 100px 0 50px;
+  }
+}

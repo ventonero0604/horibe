@@ -14,17 +14,18 @@ block page
 
   // Main
   section.Main#main
-    img(src="./img/main.png")
+    img(src="./img/main.png").pc
+    img(src="./img/main_sp.png").sp
   
   // Concept
   section.Concept#concept
-    img(src="./img/logo_concept.svg").Concept_logo
-    h2.Concept_lead 完全予約制／個室型ヘアサロン
-    p.Concept_text 高いホスピタリティを兼ね備えたオートクチュールな個室型ヘアサロン『HORIBE』
-    p.Concept_text 『ちょっとしたアートと癒しの空間で、まるで自分の部屋で髪を切っているよう…』
-    p.Concept_text そんな大人プライベートをコンセプトに、サスティナブルやオーガニックなどにもこだわって、<br>健康や環境にも配慮した安心安全な薬剤を使用し、歴25年以上の女性美容師が最初から最後まで丁寧に施術致します。<br>ご予約はお電話又はLINE公式アカウントにて承っております。
-    img(src="./img/concept_tel.svg").Concept_tel
-    p.Concept_text 東京都渋谷区神宮前3-16-16 アルチザン表参道105号
+    img(src="./img/logo_concept.svg").Concept_logo.slideUp
+    h2.Concept_lead.slideUp 完全予約制<span>／</span><span>個室型ヘアサロン</span>
+    p.Concept_text.slideUp 高いホスピタリティを兼ね備えたオートクチュールな個室型ヘアサロン『HORIBE』
+    p.Concept_text.slideUp 『ちょっとしたアートと癒しの空間で、まるで自分の部屋で髪を切っているよう…』
+    p.Concept_text.slideUp そんな大人プライベートをコンセプトに、サスティナブルやオーガニックなどにもこだわって、<br>健康や環境にも配慮した安心安全な薬剤を使用し、歴25年以上の女性美容師が最初から最後まで丁寧に施術致します。<br>ご予約はお電話又はLINE公式アカウントにて承っております。
+    img(src="./img/concept_tel.svg").Concept_tel.slideUp
+    p.Concept_text.slideUp 東京都渋谷区神宮前3-16-16 アルチザン表参道105号
 
   // Menu
   include ./sections/_menu
@@ -36,7 +37,8 @@ block page
   include ./sections/_profile
 
   // Contact
-  include ./sections/_contact
+  .Wrapper
+    include ./sections/_contact
 
   // Footer
   include ./sections/_footer

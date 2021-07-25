@@ -17,3 +17,11 @@
     position: relative;
   }
 }
+
+@include breakPoint(md) {
+  .SectionTitle {
+    &:after {
+      margin-bottom: 30px;
+    }
+  }
+}
