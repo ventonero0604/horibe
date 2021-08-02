@@ -1213,16 +1213,6 @@ button {
     padding-bottom: 100px;
   }
 
-  .Gallery_item {
-    height: 500px;
-  }
-
-  .Gallery_item img {
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-
   .Profile_contents {
     flex-direction: column;
   }
