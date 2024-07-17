@@ -6,9 +6,9 @@
   "private": true,
   "scripts": {
     "dev": "webpack --mode development",
-    "build": "webpack --mode production",
+    "build": "NODE_OPTIONS='--openssl-legacy-provider' webpack --mode production",
     "watch": "webpack  --mode development --watch",
-    "serve": "npx webpack serve"
+    "serve": "NODE_OPTIONS='--openssl-legacy-provider' npx webpack serve"
   },
   "repository": {
     "type": "git",

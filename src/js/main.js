@@ -51,9 +51,9 @@ var scroll = new SmoothScroll('a[href*="#"]', {
   easing: 'easeInOutCubic',
 });
 
-$(function () {
+$(window).on('load', function () {
   // carousel
-  if ($('.owl-carousel')) {
+  if ($('.owl-carousel').length) {
     $('.owl-carousel').owlCarousel({
       items: 1,
       loop: true,
@@ -68,6 +68,9 @@ $(function () {
           stagePadding: 200,
           margin: 30,
         },
+      },
+      onInitialized: function (event) {
+        $('.owl-carousel').css('opacity', '1');
       },
     });
   }
